@@ -69,7 +69,7 @@ public:
         return 1 + max(leftSubtree.getHeight(), rightSubtree.getHeight());
     }
 
-    string preOrder() 
+    string preOrder() // root - left - right
     {
         // TODO: return the sequence of values of nodes in pre-order.
         if (!root) return "";
@@ -87,7 +87,7 @@ public:
         return ss.str();
     }
 
-    string inOrder() 
+    string inOrder() // left - root - right
     {
         // TODO: return the sequence of values of nodes in in-order.
         if (!root) return "";
@@ -105,7 +105,7 @@ public:
         return ss.str();
     }
 
-    string postOrder() 
+    string postOrder() // left - right - root
     {
         // Base case: empty tree returns empty string
         if (!root) return "";
