@@ -1,12 +1,6 @@
 /*
 Request: Implement function:
-int sumDigitPath(BTNode* root);
-
-Where root is the root node of given binary tree (this tree has between 2 and 100000 elements). 
-This function returns the sum of all digit path numbers of this binary tree (the result may be large, so you must use mod 27022001 before returning).
-More information:
-- A path is called as digit path if it is a path from the root node to the leaf node of the binary tree.
-- Each digit path represents a number in order, each node's val of this path is a digit of this number, while root's val is the first digit.
+int lowestAncestor(BTNode* root, int a, int b);
 */
 
 #include <bits/stdc++.h>
@@ -36,7 +30,7 @@ class BTNode
 
         // TODO
         // Helper function to find the LCA and return its pointer
-        BTNode* findLCA(BTNode* node, int a, int b) 
+        BTNode* findLCA(BTNode* node, int a, int b) // lowest common ancestor
         {
             // Base case: if node is NULL, return NULL
             if (!node) return nullptr;
